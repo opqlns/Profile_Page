@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    min-height: 800px;
+    min-width: 200px;
+    gap: 20px;
+    width: 1000px;
+    height: 1200px;
+    margin: 0 auto;
+    top: 50px;
+    background: grey;
+    padding-top: 50px;
+    padding-left: 200px;
+
+}
+
+.flexed{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col{
+    flex: 2;
+}
+
+.col-2{
+    flex: 1;
+}
+
+
+.header{
+    width: 100%;
+    background-color: red;
+}
+
+/* header */
+
+.header h1{
+    color: white;
+}
+
+.nav-container{
+    background-color: #7a5454;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    margin: 0 auto;
+    height: 150px;
+    
+}    
+
+.nav-title{
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 20px;  
+}
+
+
+.nav-links{
+    align-items: flex-end;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-links .btn {
+    background-color: #18a2b8;
+    color: black;
+    height: 35px;
+    width: 100px;
+    box-shadow: 5px 10px;
+    border: 3px solid black;
+    
+}
+
+
+/* user card */
+
+.user_card{
+    background-color: red;
+    height: 500px;
+    width: 700px;
+}
+
+/* requests */
+
+.requests{
+    background-color: rgb(206, 192, 255);
+    height: 500px;
+    width: 400px;
+    margin-left: 100px;
+}
+
+/* education */
+
+.education{
+    background-color: orange;
+    height: 500px;
+    width: 400px;
+    top: 150px
+}
+
+/* connections */
+
+.connections{
+    background-color: salmon;
+    height: 500px;
+    width: 400px;
+    margin-left: 500px;
+}
+
