@@ -19,7 +19,6 @@
                 </ul>
             </div>
                 <button>Sign Out</button>
-            </ul>
         </div>
     </header>
     <div class="container flexed flex-start">
@@ -29,7 +28,7 @@
                     <img src="./images/jane-m.jpg" alt="profile picture of user" class="profileimg">
                 </div>
                 <div class = "bot_bar">
-                        <h1 class="card_text">Jane Doe</h1>
+                        <h1 class="card_text" id="username">Jane Doe</h1>
                         <h3 class="card_text">
                             <img src="/Users/avbreath/Desktop/dojo_assignments/web_fundamentals/css/User_Card/icons/map-marker.png" alt="map marker" class="icons">
                             Seattle
@@ -38,7 +37,7 @@
                         Master of shadows and the Internet!</p>
                         <p class="card_text">
                             <img src="/Users/avbreath/Desktop/dojo_assignments/web_fundamentals/css/User_Card/icons/gear.png" alt="edit icon" class="icons">
-                            <a href="#">edit profile</a>
+                            <a onclick="edit_profile()" href="#">edit profile</a>
                         </p>
                     
                 </div>
@@ -49,7 +48,7 @@
                 </div>
                 <div class="edu_body">
                     <h2>Coding Dojo - Full Stack Bootcamp</h2>
-                    <h3>Dec 2019 - Mar 2020</h1>
+                    <h3>Dec 2019 - Mar 2020</h3>
                     <p>Triple black belt in Python, MERN, and C#</p>
                 </div>
             </div>
@@ -58,29 +57,29 @@
             <div class="requests">
                 <div class="req_head head_text head_flexed">
                     <div class="number_background">
-                        <h3>2</h3>
+                        <h3 id="connectionRequests">2</h3>
                     </div>
                     <h3>Connection Requests</h3>
                 </div>
                 <div class="req_body">
-                    <div class="users head_flexed">
+                    <div class="users head_flexed" id="Todd">
                         <img class="user_images" src="./images/todd-s.jpg" alt="Todd S Profile Picture">
                         <h3 class>Todd E</h3>
-                        <img class="yesno" src="./icons/accept-circle.png" alt="accept icon">
-                        <img class="yesno" src="./icons/close-circle.png" alt="close icon">
+                        <img onclick="accept_Todd()"class="yesno" src="./icons/accept-circle.png" alt="accept icon">
+                        <img onclick="deny_Todd()"class="yesno" src="./icons/close-circle.png" alt="close icon">
                     </div>
-                    <div class="users head_flexed">
+                    <div class="users head_flexed" id="Phil">
                         <img class="user_images" src="./images/phil-s.jpg" alt="Phil K Proffile Picture">
                         <h3>Phil K</h3>
-                        <img class="yesno" src="./icons/accept-circle.png" alt="accept icon">
-                        <img class="yesno" src="./icons/close-circle.png" alt="close icon">
+                        <img onclick="accept_Phil()"class="yesno" src="./icons/accept-circle.png" alt="accept icon">
+                        <img onclick="deny_Phil()"class="yesno" src="./icons/close-circle.png" alt="close icon">
                     </div>
                 </div>
             </div>
             <div class="connections">
                 <div class="connect_head head_text head_flexed">
                     <div class="number_background-2">
-                        <h3>500+</h3> 
+                        <h3 id="connections">418</h3> 
                     </div>
                     <h3>Your Connections</h3>
                 </div>
@@ -108,5 +107,6 @@
             </div>
         </aside>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
